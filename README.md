@@ -52,6 +52,6 @@
 
 ## Demo
 	
-* [Sample](https://cdn.rawgit.com/davidayalas/gspreadsheet-html-timetable/master/samples/index.html)
+* [Sample](https://rawgit.com/davidayalas/gspreadsheet-html-timetable/master/samples/index.html)
 * Live site: https://irespira.cat#horari
 	
