@@ -15,7 +15,7 @@
 
 	![spreadsheet id](spreadsheet.png)
 
-## Install
+## Install & Usage
 
 * Download and put in your js assets [/lib/jquery.gshtmltable.js](/lib/jquery.gshtmltable.js)
 * Invoke $.drawTables() from your html page
