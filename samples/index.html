@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="responsive.css" />
+	</head>
+
+	<body>
+		
+		<h2>If you resize this window, only "Responsive table" will be displayed. Original table is <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR9A5Lmeo7nX6TsT9JLnDJdgpzUNobkRKnUucO_buk5FKTdyvdZPy-OKbZXSZrtSxoLZcACEuUziJgU/pubhtml">this spreadsheet</a></h2>
+
+		<div class="desktop_mobile">
+			<h1>Desktop on mobile</h1>
+			<iframe src="only_desktop.html" width="360" height="500"></iframe>
+		</div>
+
+		<div class="responsive_mobile">
+			<h1>Responsive on mobile</h1>
+			<iframe src="only_responsive.html" width="360" height="500"></iframe>
+		</div>
+
+		<div class="break"></div>
+
+		<div class="desktop_table">
+			<h1>Desktop table</h1>
+		</div>
+
+		<div class="responsive_table">
+			<h1>Responsive table</h1>
+		</div>
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="../lib/jquery.gshtmltable.js"></script>
+	<script>
+		$.drawTables({
+            spreadsheet: "1c_vDuF6yEuLHDKANUk_2drO0HFIgWQRqrWN3GIVGFRg",
+            desktop_container: ".desktop_table",
+            responsive_container: ".responsive_table"			
+		});
+	</script>
+</html>

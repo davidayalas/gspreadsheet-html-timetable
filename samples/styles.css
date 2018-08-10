@@ -1,0 +1,42 @@
+h1{
+	margin-bottom: 1em;
+	width: 100%;
+	display: block;
+}
+iframe{
+	border:solid 25px #666;
+	border-radius: 2em;
+}
+
+.desktop_mobile, .responsive_mobile{
+	float:left;
+	width: 45%;
+	display: block;
+}
+
+.break{
+	display: block; 
+	width: 100%; 
+	clear: both;
+	position: relative;
+}
+
+/* TABLE STYLING */
+table{
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    width: auto;
+    min-width: 100%; 
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+td, th { border: 1px solid #CCC; height: 30px;}
+th {  
+    background: #F3F3F3;
+    font-weight: bold;
+}
+
+td {  
+    background: #FAFAFA;
+    text-align: center;
+}
