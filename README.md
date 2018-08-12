@@ -19,7 +19,7 @@ you will get this
 
 or this
 
-![responsive view](samples/images/responsive-view.png | width=100)
+![responsive view](samples/images/responsive-view.png)
 
 
 ## Prerequisites & requirements
