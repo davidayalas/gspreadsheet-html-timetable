@@ -64,7 +64,7 @@ or this
 	</script>
 ```
 
-* if desktop_container or responsive_container are null, painting won't be processed.
+* if desktop_container or responsive_container are null, its painting won't be processed.
 
 ## Demo
 	
