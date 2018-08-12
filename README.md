@@ -7,7 +7,7 @@
 	* Desktop (same view as spreadsheet)
 	* Responsive (splits column headers -monday, ..., sunday- as new rows)
 
-## From spreadsheet to HMTML
+## From spreadsheet to HTML
 
 From this
 
