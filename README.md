@@ -7,13 +7,29 @@
 	* Desktop (same view as spreadsheet)
 	* Responsive (splits column headers -monday, ..., sunday- as new rows)
 
+## From spreadsheet to HMTML
+
+From this
+
+![spreadsheet id](samples/images/spreadsheet-table.png)
+
+you will get this
+
+![table view](samples/images/table-view.png)
+
+or this
+
+![responsive view](samples/images/responsive-view.png)
+
+
 ## Prerequisites & requirements
 
 * JQuery
 * A spreadsheet and make it public ("publish to the web" option)
 	* Get the id of the spreadsheet from the url (from the sample: _1c_vDuF6yEuLHDKANUk_2drO0HFIgWQRqrWN3GIVGFRg_)
 
-	![spreadsheet id](spreadsheet.png)
+![spreadsheet id](samples/images/spreadsheet-url-id.png)
+
 
 ## Install & Usage
 

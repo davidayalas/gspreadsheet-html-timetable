@@ -5,13 +5,13 @@ h1{
 }
 iframe{
 	border:solid 25px #666;
-	border-radius: 2em;
+	border-radius: 2em;	
+	width:360px;
+	height:500px;	
 }
 
 .desktop_mobile, .responsive_mobile{
-	float:left;
-	width: 45%;
-	display: block;
+	display: none;
 }
 
 .break{
