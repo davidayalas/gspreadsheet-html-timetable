@@ -45,7 +45,7 @@ or this
 ```
 
 * It will paint two tables:
-	* one with the same form of the spreadsheet (n rows x n cols)
+	* one with the same view of the spreadsheet (n rows x n cols)
 	* one responsive, adapted to mobile
 
 * You can pass some options to drawTables()
