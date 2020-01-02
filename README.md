@@ -24,7 +24,6 @@ or this
 
 ## Prerequisites & requirements
 
-* JQuery
 * A spreadsheet and make it public ("publish to the web" option)
 	* Get the id of the spreadsheet from the url (from the sample: _1c_vDuF6yEuLHDKANUk_2drO0HFIgWQRqrWN3GIVGFRg_)
 
@@ -33,14 +32,13 @@ or this
 
 ## Install & Usage
 
-* Download and put in your js assets [/lib/jquery.gshtmltable.js](/lib/jquery.gshtmltable.js)
-* Invoke $.drawTables() from your html page
+* Download and put in your js assets [/lib/gshtmltable.js](/lib/gshtmltable.js)
+* Invoke drawTables() from your html page
 
 ```javascript
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="lib/jquery.gshtmltable.js"></script>
+	<script src="lib/gshtmltable.js"></script>
 	<script>
-		$.drawTables();
+		drawTables();
 	</script>
 ```
 
@@ -52,7 +50,7 @@ or this
 
 ```javascript
 	<script>
-		$.drawTables({
+		drawTables({
 			'spreadsheet' : 'id of your spreadsheet',
 			'desktop_container' : '# id of your container for desktop table, with "#" or ".", default "body"',
 			'responsive_container' : '# id of your container for responsive table, with "#" or ".", default "body"',
