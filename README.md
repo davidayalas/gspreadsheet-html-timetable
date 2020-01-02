@@ -66,6 +66,6 @@ or this
 
 ## Demo
 	
-* [Sample](https://rawgit.com/davidayalas/gspreadsheet-html-timetable/master/samples/index.html)
+* [Sample](https://rawcdn.githack.com/davidayalas/gspreadsheet-html-timetable/abd90cdcdf7c5340c6179966bf7572ad7a7c24f0/samples/index.html)
 * Live site: https://irespira.cat#horari
 	
