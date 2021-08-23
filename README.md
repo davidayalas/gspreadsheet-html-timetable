@@ -75,6 +75,6 @@ Maybe you want to put the request to Google Sheets API behind a proxy to avoid t
 
 ## Demo
 	
-* [Sample](https://rawcdn.githack.com/davidayalas/gspreadsheet-html-timetable/abd90cdcdf7c5340c6179966bf7572ad7a7c24f0/samples/index.html)
+* [Sample](https://rawcdn.githack.com/davidayalas/gspreadsheet-html-timetable/73c0fce746b8b8d8d098e7ba9c9962bbca373bf0/samples/index.html)
 * Live site: https://irespira.cat#horari
 	
