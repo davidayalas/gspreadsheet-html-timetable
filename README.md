@@ -57,6 +57,7 @@ or this
 	<script>
 		drawTables({
 			'spreadsheet' : 'id of your spreadsheet',
+			'api_key' : 'your api key from https://console.cloud.google.com/',
 			'desktop_container' : '# id of your container for desktop table, with "#" or ".", default "body"',
 			'responsive_container' : '# id of your container for responsive table, with "#" or ".", default "body"',
 			'desktop_css' : 'desktop css to add to class attribute',
