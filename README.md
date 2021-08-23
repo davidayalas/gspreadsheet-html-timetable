@@ -24,11 +24,16 @@ or this
 
 ## Prerequisites & requirements
 
-* A spreadsheet and make it public ("publish to the web" option)
+* A spreadsheet and make it public ("share" options, anyone with the link can read)
 	* Get the id of the spreadsheet from the url (from the sample: _1c_vDuF6yEuLHDKANUk_2drO0HFIgWQRqrWN3GIVGFRg_)
 
 ![spreadsheet id](samples/images/spreadsheet-url-id.png)
 
+
+* Create a new project in https://console.cloud.google.com/
+	* Enable Google Spreadsheet API
+	* In credentials, create an API KEY
+	* Restrict API KEY to Google Sheets
 
 ## Install & Usage
 
@@ -63,6 +68,10 @@ or this
 ```
 
 * if desktop_container or responsive_container are null, its painting won't be processed.
+
+## Recommended
+
+Maybe you want to put the request to Google Sheets API behind a proxy to avoid the exposition of your API KEY, and you can cache the JSON output and invalidate when you want.
 
 ## Demo
 	
