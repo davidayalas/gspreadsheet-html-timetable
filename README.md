@@ -97,6 +97,6 @@ Or you can create a Google Apps Script to return the array of values:
 
 ## Demo
 	
-* [Sample](https://rawcdn.githack.com/davidayalas/gspreadsheet-html-timetable/340a3cf525a164c81f7138ba42876faee25fae71/samples/index.html)
+* [Sample](https://rawcdn.githack.com/davidayalas/gspreadsheet-html-timetable/d63ed9a6f1f30271a75a97872002e9e93a43d46f/samples/index.html)
 * Live site: https://irespira.cat#horari
 	
