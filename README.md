@@ -91,7 +91,7 @@ Or you can create a Google Apps Script to return the array of values:
 			}
 			resp.push(row);
 		}
-		return ContentService.createTextOutput(callback + "({\"values\":" + JSON.stringify(resp) + ")}").setMimeType(ContentService.MimeType.JAVASCRIPT);
+		return ContentService.createTextOutput(callback + "({\"values\":" + JSON.stringify(resp) + "})").setMimeType(ContentService.MimeType.JAVASCRIPT);
 	}
 ```
 
