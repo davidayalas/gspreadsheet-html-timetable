@@ -30,10 +30,12 @@ or this
 ![spreadsheet id](samples/images/spreadsheet-url-id.png)
 
 
-* Create a new project in https://console.cloud.google.com/
+* If you want to access through API v4, create a new project in https://console.cloud.google.com/
 	* Enable Google Spreadsheet API
 	* In credentials, create an API KEY
 	* Restrict API KEY to Google Sheets
+
+* If you want to proxy with Google Apps Script, see below
 
 ## Install & Usage
 
@@ -56,8 +58,7 @@ or this
 ```javascript
 	<script>
 		drawTables({
-			'spreadsheet' : 'id of your spreadsheet',
-			'api_key' : 'your api key from https://console.cloud.google.com/',
+			'url' : 'url of your proxy or spreadsheet api url (with api key, ...)',
 			'desktop_container' : '# id of your container for desktop table, with "#" or ".", default "body"',
 			'responsive_container' : '# id of your container for responsive table, with "#" or ".", default "body"',
 			'desktop_css' : 'desktop css to add to class attribute',
@@ -78,19 +79,19 @@ Or you can create a Google Apps Script to return the array of values:
 
 ```javascript
 	function doGet(e){
-	const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-	const data = sheet.getDataRange().getValues();
-	const callback = e && e.parameter && e.parameter.callback ? e.parameter.callback : "f";
-	var resp = [];
-	var row = [];
-	for (var i=0; i < data.length; i++) {
-		row = [];
-		for (var z = 0; z < data[i].length; z++) {
-			row.push(data[i][z].toString());
+		const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+		const data = sheet.getDataRange().getValues();
+		const callback = e && e.parameter && e.parameter.callback ? e.parameter.callback : "f";
+		var resp = [];
+		var row = [];
+		for (var i=0; i < data.length; i++) {
+			row = [];
+			for (var z = 0; z < data[i].length; z++) {
+				row.push(data[i][z].toString());
+			}
+			resp.push(row);
 		}
-		resp.push(row);
-	}
-	return ContentService.createTextOutput(callback + "({\"values\":" + JSON.stringify(resp) + ")").setMimeType(ContentService.MimeType.JAVASCRIPT);
+		return ContentService.createTextOutput(callback + "({\"values\":" + JSON.stringify(resp) + ")").setMimeType(ContentService.MimeType.JAVASCRIPT);
 	}
 ```
 
