@@ -74,6 +74,26 @@ or this
 
 Maybe you want to put the request to Google Sheets API behind a proxy to avoid the exposition of your API KEY, and you can cache the JSON output and invalidate when you want.
 
+Or you can create a Google Apps Script to return the array of values:
+
+```javascript
+	function doGet(e){
+	const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+	const data = sheet.getDataRange().getValues();
+	const callback = e && e.parameter && e.parameter.callback ? e.parameter.callback : "f";
+	var resp = [];
+	var row = [];
+	for (var i=0; i < data.length; i++) {
+		row = [];
+		for (var z = 0; z < data[i].length; z++) {
+			row.push(data[i][z].toString());
+		}
+		resp.push(row);
+	}
+	return ContentService.createTextOutput(callback + "({\"values\":" + JSON.stringify(resp) + ")").setMimeType(ContentService.MimeType.JAVASCRIPT);
+	}
+```
+
 ## Demo
 	
 * [Sample](https://rawcdn.githack.com/davidayalas/gspreadsheet-html-timetable/73c0fce746b8b8d8d098e7ba9c9962bbca373bf0/samples/index.html)
