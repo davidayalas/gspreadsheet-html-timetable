@@ -91,12 +91,12 @@ Or you can create a Google Apps Script to return the array of values:
 			}
 			resp.push(row);
 		}
-		return ContentService.createTextOutput(callback + "({\"values\":" + JSON.stringify(resp) + ")").setMimeType(ContentService.MimeType.JAVASCRIPT);
+		return ContentService.createTextOutput(callback + "({\"values\":" + JSON.stringify(resp) + ")}").setMimeType(ContentService.MimeType.JAVASCRIPT);
 	}
 ```
 
 ## Demo
 	
-* [Sample](https://rawcdn.githack.com/davidayalas/gspreadsheet-html-timetable/523efd63211402f1e6b766cc10349743b1f7a714/samples/index.html)
+* [Sample](https://rawcdn.githack.com/davidayalas/gspreadsheet-html-timetable/340a3cf525a164c81f7138ba42876faee25fae71/samples/index.html)
 * Live site: https://irespira.cat#horari
 	
